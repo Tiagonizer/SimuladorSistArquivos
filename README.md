@@ -63,7 +63,7 @@ Parte do trabalho inclui um modo interativo (um shell simples) para executar com
 
 **Parte 3 — Implementação em Java**
 
-Arquivos principais (agora separados em arquivos `.java` individuais no diretório do projeto):
+Arquivos principais:
 
 - `Main.java` — shell (REPL) que interpreta comandos do usuário e delega para o simulador.
 - `FileSystemSimulator.java` — implementação do simulador e integração com o journal.
@@ -87,6 +87,7 @@ Principais operações suportadas (mesma lista funcional):
 - `persist` — força persistência do estado atual em `fs.data`
 
 O `Journal` grava uma entrada `START` antes da execução e `COMMIT` após sucesso; somente operações com `COMMIT` são consideradas seguras sem replay.
+
 ---
 
 
@@ -125,5 +126,6 @@ Observações:
 
 
 ---
+
 
 
