@@ -4,7 +4,6 @@
 
 Este repositório contém um simulador simples de sistema de arquivos escrito em Java, com suporte a journaling (log de operações) para garantir integridade e recuperação após falhas. O objetivo é didático: demonstrar conceitos de organização de arquivos, operações de manipulação e um mecanismo básico de journaling.
 
-**Observação:** Este README deve ser a primeira página do repositório no GitHub e também convertido em PDF para envio ao AVA.
 
 ---
 
@@ -16,7 +15,7 @@ Este repositório contém um simulador simples de sistema de arquivos escrito em
 - **Parte 2 — Arquitetura do Simulador**
 - **Parte 3 — Implementação em Java**
 - **Parte 4 — Instalação e Funcionamento**
-- **Link do GitHub**
+- **[Link do GitHub](https://github.com/Tiagonizer/SimuladorSistArquivos)**
 
 ---
 
@@ -121,31 +120,10 @@ Ao executar, você verá o prompt `fs>`. Exemplos de uso:
 
 Observações:
 
-- O comando `write` trata aspas para permitir espaços no conteúdo; se precisar gravar dados binários, converta-os para Base64 no cliente e salve como texto (ou eu posso estender o simulador para suportar base64 nativamente).
+- O comando `write` trata aspas para permitir espaços no conteúdo; se precisar gravar dados binários, converta-os para Base64 no cliente e salve como texto.
 - O estado persistido é armazenado em `fs.data` (serialização Java). O `journal.log` mantém o histórico de operações para recuperação.
 
----
-
-**Conversão para PDF**
-
-No GitHub, abra o `README.md` e use a opção de impressão/exportação do navegador para gerar PDF. Alternativamente, localmente, você pode usar ferramentas como `pandoc`:
-
-```powershell
-pandoc README.md -o relatorio.pdf
-```
 
 ---
 
-**Link do GitHub**
 
-- Substitua no topo do documento o placeholder pelo link do repositório quando disponível: `https://github.com/SEU-USUARIO/SEU-REPO`
-
----
-
-Se quiser, eu posso:
-- adicionar um `Makefile`/script PowerShell para compilar e executar automaticamente;
-- separar as classes em arquivos `.java` distintos dentro de `src/` e criar uma estrutura de projeto (ex.: `src/simulador/*`);
-- adicionar testes unitários simples;
-- ou gerar o PDF já pronto a partir deste `README.md`.
-
-Informe qual desses itens deseja que eu faça em seguida.
