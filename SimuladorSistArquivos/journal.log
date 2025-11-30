@@ -1,0 +1,24 @@
+{"id":1,"op":"MKDIR","ts":1764507208326,"status":"START","params":{"path":"/docs"}}
+{"id":1,"op":"MKDIR","ts":1764507208326,"status":"COMMIT","params":{"path":"/docs"}}
+{"id":2,"op":"MKDIR","ts":1764507215976,"status":"START","params":{"path":"/imagens"}}
+{"id":2,"op":"MKDIR","ts":1764507215976,"status":"COMMIT","params":{"path":"/imagens"}}
+{"id":3,"op":"MKDIR","ts":1764507228900,"status":"START","params":{"path":"/docs/trabalhos"}}
+{"id":3,"op":"MKDIR","ts":1764507228900,"status":"COMMIT","params":{"path":"/docs/trabalhos"}}
+{"id":4,"op":"TOUCH","ts":1764507943743,"status":"START","params":{"path":"/docs/relatorio.txt"}}
+{"id":4,"op":"TOUCH","ts":1764507943744,"status":"COMMIT","params":{"path":"/docs/relatorio.txt"}}
+{"id":5,"op":"TOUCH","ts":1764507956127,"status":"START","params":{"path":"/imagens/foto.png"}}
+{"id":5,"op":"TOUCH","ts":1764507956128,"status":"COMMIT","params":{"path":"/imagens/foto.png"}}
+{"id":6,"op":"WRITE","ts":1764508877675,"status":"START","params":{"path":"/docs/relatorio.txt","content":"Trabalho de Sistemas Operacionais"}}
+{"id":6,"op":"WRITE","ts":1764508877675,"status":"COMMIT","params":{"path":"/docs/relatorio.txt","content":"Trabalho de Sistemas Operacionais"}}
+{"id":7,"op":"WRITE","ts":1764508890630,"status":"START","params":{"path":"/imagens/foto.png","content":"dadosbinarios"}}
+{"id":7,"op":"WRITE","ts":1764508890631,"status":"COMMIT","params":{"path":"/imagens/foto.png","content":"dadosbinarios"}}
+{"id":8,"op":"CP","ts":1764508925630,"status":"START","params":{"dest":"/docs/copia_relatorio.txt","src":"/docs/relatorio.txt"}}
+{"id":8,"op":"CP","ts":1764508925636,"status":"COMMIT","params":{"dest":"/docs/copia_relatorio.txt","src":"/docs/relatorio.txt"}}
+{"id":9,"op":"MV","ts":1764508955810,"status":"START","params":{"dest":"/docs/relatorio_final.txt","src":"/docs/relatorio.txt"}}
+{"id":9,"op":"MV","ts":1764508955813,"status":"COMMIT","params":{"dest":"/docs/relatorio_final.txt","src":"/docs/relatorio.txt"}}
+{"id":10,"op":"RM","ts":1764508990493,"status":"START","params":{"path":"/docs/copia_relatorio.txt"}}
+{"id":10,"op":"RM","ts":1764508990493,"status":"COMMIT","params":{"path":"/docs/copia_relatorio.txt"}}
+{"id":11,"op":"MV","ts":1764509002692,"status":"START","params":{"dest":"/fotos","src":"/imagens"}}
+{"id":11,"op":"MV","ts":1764509002693,"status":"COMMIT","params":{"dest":"/fotos","src":"/imagens"}}
+{"id":12,"op":"RMDIR","ts":1764509038064,"status":"START","params":{"path":"/docs/trabalhos"}}
+{"id":12,"op":"RMDIR","ts":1764509038064,"status":"COMMIT","params":{"path":"/docs/trabalhos"}}
